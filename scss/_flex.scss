@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.cont {
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.block {
+  margin: 5px;
+}
