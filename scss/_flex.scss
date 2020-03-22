@@ -20,3 +20,15 @@
 .block {
   margin: 5px;
 }
+.inner-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.inner-block {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
