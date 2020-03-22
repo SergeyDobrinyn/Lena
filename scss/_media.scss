@@ -1,15 +1,25 @@
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .cont {
-    width: 1170px;
+    width: 750px;
+  }
+  .cont-flow {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 @media (min-width: 992px) {
   .cont {
     width: 970px;
   }
+  .cont-flow {
+    width: 90%;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .cont {
-    width: 750px;
+    width: 1170px;
+  }
+  .cont-flow {
+    width: 90%;
   }
 }
