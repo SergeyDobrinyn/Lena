@@ -47,8 +47,9 @@ function sync(done) {
       baseDir: "./dist"
     },
     port: 3000,
-    browser: ["firefox"],
-    notify: false
+    browser: ["google chrome"],
+    notify: false,
+    open: false
   });
   done();
 }
