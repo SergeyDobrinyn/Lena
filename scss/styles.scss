@@ -2,14 +2,14 @@
 body {
   font-family: "Decor";
   font-size: 4rem;
-}
-.wrap {
-  background-color: #0DB722;
+  background-color: silver;
 }
 .block {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 22%;
   align-self: stretch;
-  background-color: #FFFFFF;
+  & p {
+    color: #FFFFFF;
+  }
 }
