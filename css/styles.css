@@ -1,0 +1,482 @@
+@import url(reset.css);
+@import url(flex.css);
+@import url(fonts.css);
+@import url(media.css);
+html {
+  font-family: "BitterRegular";
+  color: #3F51B5;
+}
+body {
+  color: #FFFFFF;
+}
+header, section, footer {
+  padding: 15px 0;
+  color: #FFFFFF;
+}
+header {
+  /*color: #FFFFFF;*/
+  color: #000000;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+  display: none;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -90;
+  background: rgb(40,194,226);
+  background: radial-gradient(circle, rgba(40,194,226,1) 0%, rgba(110,120,217,1) 50%, rgba(2,0,36,1) 100%);
+}
+header .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .wrap {
+  align-items: center;
+  padding: 0 20px;
+}
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mid .wrap {
+  width: 100%;
+}
+.mid .wrap div {
+  flex-basis: 510px;
+  flex-shrink: 1;
+  text-align: center;
+}
+.mid .wrap p {
+  text-align: center;
+  margin: 10px 0;
+  font-family: "BitterItalic";
+}
+.mid h2 {
+  font-family: "BitterBold";
+  font-size: 120%;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.mid h2 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.mid .wrap ul {
+  margin: 20px 0;
+}
+.mid ul li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.mid ul li:last-child {
+  margin-bottom: 0;
+}
+.mid ul li a {
+  color: #FFFFFF;
+  font-size: 250%;
+}
+.bot .wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bot .wrap a {
+  display: block;
+  padding: 10px 20px;
+  border: 2px #FFFFFF solid;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.bot .wrap a:hover {
+  background-color: #FFFFFF;
+  color: rgb(40,194,226);
+}
+h1 {
+  font-size: 220%;
+  font-family: "BitterBold";
+  text-transform: uppercase;
+}
+h2.team {
+  font-family: "BitterBold";
+  font-size: 180%;
+  text-align: center;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.logo img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.logo a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "BitterBold";
+}
+.logo span {
+  font-size: 80%;
+  font-family: "BitterItalic";
+}
+/*Logo*/
+a.logo {
+  color: #FFFFFF;
+  text-decoration: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 240px;
+}
+a.logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  transition: .5s;
+  z-index: 999;
+  background-color: rgba(0,0,0,.6);
+}
+nav.desk {
+  text-align: center;
+}
+nav.desk ul {
+  display: inline-block;
+}
+.nav-link:hover {
+  color: rgb(40,194,226);
+  transition: .5s;
+}
+#skill {
+  color: #000000;
+}
+#skill .wrap {
+  justify-content: center;
+}
+#skill .block {
+  flex-basis: 46%;
+  position: relative;
+}
+#skill .block img.me {
+  display: block;
+  width: 180px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+  shape-outside: circle(50%);
+}
+#skill .welcome {
+  font-family: "BitterItalic";
+}
+#skill .block img {
+  display: block;
+  width: 60px;
+  float: left;
+}
+#skill .block img.bage {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 40px;
+  left: 40px;
+}
+#skill .block h2 {
+  font-family: "BitterBold";
+  font-size: 180%;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+#skill .block p {
+  margin-left: 80px;
+  text-align: justify;
+}
+.small-pics {
+  margin-left: 80px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.small-pics img.smpic {
+  width: 40px !important;
+  height: 40px;
+  margin: 5px;
+}
+#skill .block a.nav-link {
+  margin-left: 80px;
+}
+#portfolio {
+  background-color: #C5C5D6;
+  color: #000000;
+}
+#portfolio .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.controls {
+  margin-bottom: 10px;
+}
+.controls button {
+  font-family: "BitterRegular";
+  font-size: 1em;
+  background-color: rgba(255,255,255,0);
+  height: 30px;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.controls button.on {
+  border-bottom: 2px solid rgb(40,194,226);
+}
+.portfolio-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.port-item {
+  overflow: hidden;
+  flex-grow: 0;
+}
+.port-item img {
+  display: block;
+  width: 100%;
+}
+.mix {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 24%;
+  margin: 1px;
+  text-align: center;
+  background-color: #777777;
+  display: none;
+}
+#we {
+  color: #000000;
+  background-color: #C5C5D6;
+}
+.owl-carousel div {
+  min-width: 240px;
+}
+.we-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.we-person>* {
+  display: block;
+  width: 100%;
+}
+.we-person img {
+  max-width: 120px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border-radius: 100%;
+}
+.we-person h4 {
+  text-align: center;
+  font-family: "BitterBold"
+}
+.we-person p {
+  text-align: center;
+  font-family: "BitterItalic";
+  font-size: 80%;
+  margin: 5px 0;
+}
+.personal-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.personal-links a {
+  display: block;
+  padding: 0 5px;
+  color: #575757;
+  text-decoration: none;
+}
+/*Styles*/
+.block {
+  margin: 5px 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.block ul.want {
+  margin-left: 80px;
+  list-style-type: disc;
+}
+.block ul.want li {
+  margin-left: 20px;
+  font-family: "BitterItalic"
+}
+footer {
+  background-color: #575757;
+}
+footer .wrap {
+  justify-content: center;
+}
+footer .logo {
+  font-family: "BitterBold";
+  font-size: 120%;
+}
+footer .block {
+  flex-basis: 250px;
+  line-height: 1.4;
+}
+footer .block h3 {
+  font-family: "BitterBold";
+  text-align: center;
+  font-size: 120%;
+  line-height: 50px;
+}
+footer .block a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .block p {
+  text-align: left;
+}
+.payment {
+  margin-top: 10px;
+}
+.payment img {
+  display: inline-block;
+  height: 30px;
+}
+.communicate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.communicate li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+.copy {
+  font-family: "BitterItalic";
+}
+/*Go to top*/
+span#goTopSpan {
+  color: rgb(40,194,226);
+  text-shadow: 0px 0px 4px rgba(0,0,0,.5);
+  z-index: 999;
+}
+.ya-share2__container, .ya-share2__container_size_m {
+  text-align: center;
+}
+/*Pop-up*/
+.popup-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #FA6600;
+}
+.pop-up {
+  background-color: #666666;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "ClearSansLight";
+  font-size: .8rem;
+}
+.pop-up img {
+  display: block;
+  width: 210px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.gauge {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20% !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/*Gauge Meter*/
+.gaugemeter {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  cursor: default;
+  display: inline-block;
+}
+.gaugemeter span, .gaugemeter b {
+  width: 54%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 100;
+  font-family: "BitterRegular";
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 23%;
+}
+.gaugemeter[data-style="semi"] b {
+  width: 80%;
+  margin: 0 10%;
+}
+.gaugemeter s, .gaugemeter u {
+  text-decoration: none;
+  font-size: .6em;
+  font-weight: 200;
+  opacity: .6;
+}
+.gaugemeter b {
+  color: #000000;
+  font-weight: 200;
+  opacity: .8;
+}
